@@ -13,7 +13,7 @@ squeezeNet with simple-bypass
 # How to run
 git clone git@github.com:amazarashi/squeeze-chainer.git
 
-cd ./squeeze-chainer
+cd ./squeeze-simpleByPass-chainer
 
 python main.py -g 1
 
