@@ -1,6 +1,6 @@
 # About
 
-SqueezeNet-Simple-ByPass by chainer
+SqueezeNet-SimpleByPass by chainer
 
 # Paper
 
