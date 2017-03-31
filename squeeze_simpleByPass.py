@@ -13,7 +13,7 @@ class FireModule(chainer.Chain):
             conv1 = L.Convolution2D(input_size,s1,1,initialW=initializer),
             conv2 = L.Convolution2D(s1,e1,1,initialW=initializer),
             conv3 = L.Convolution2D(s1,e3,3,pad=(1,1),initialW=initializer),
-            bn1 = L.BatchNormalization(e1+e3)
+            bn1 = L.BatchNormalization(s1)
             bn2 = L.BatchNormalization(e1+e3)
         )
 
