@@ -13,15 +13,17 @@ class FireModule(chainer.Chain):
             conv1 = L.Convolution2D(input_size,s1,1,initialW=initializer),
             conv2 = L.Convolution2D(s1,e1,1,initialW=initializer),
             conv3 = L.Convolution2D(s1,e3,3,pad=(1,1),initialW=initializer),
-            bn = L.BatchNormalization(e1+e3)
+            bn1 = L.BatchNormalization(e1+e3)
+            bn2 = L.BatchNormalization(e1+e3)
         )
 
     def __call__(self,x,train=False):
         h = F.relu(self.conv1(x))
-        h1 = self.conv2(h)
+        bn = self.bn1(h, test=not train)
+        h1 = self.conv2(bn)
         h2 = self.conv3(h)
         h_expand = F.relu(F.concat([h1,h2],axis=1))
-        bn = self.bn(h_expand, test=not train)
+        bn = self.bn2(h_expand, test=not train)
         return bn
 
 class SqueezeSimpleByPass(chainer.Chain):
