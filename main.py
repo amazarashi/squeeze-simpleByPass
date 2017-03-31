@@ -27,7 +27,7 @@ if __name__ == '__main__':
     epoch = args.pop('epoch')
 
     model = squeeze_simpleByPass.SqueezeSimpleByPass(10)
-    optimizer = amaz_optimizer.OptimizerSqueeze(model,lr=lr,epoch=epoch)
+    optimizer = amaz_optimizer.OptimizerSqueezeOnPaper(model,lr=lr,epoch=epoch)
     dataset = amaz_cifar10_dl.Cifar10().loader()
     dataaugumentation = amaz_augumentationCustom.Normalize128
     args['model'] = model
