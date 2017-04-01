@@ -26,8 +26,6 @@ python main.py -g 1
 
 - Optimizer momentumSGD (0.04[as mentioned in paper] ~ scheduling lineary )
 
-accuracy
 ![accuracy_0.04](https://github.com/amazarashi/squeeze-simpleByPass-chainer/blob/develop/result/0.04/accuracy.png "")
 
-loss
 ![loss_0.04](https://github.com/amazarashi/squeeze-simpleByPass-chainer/blob/develop/result/0.04/loss.png "")
