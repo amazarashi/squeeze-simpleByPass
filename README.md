@@ -27,15 +27,15 @@ python main.py -g 1
 - Optimizer momentumSGD (0.01[custom value for batch normarlization] ~ scheduling lineary )
 
 accuracy
-[](https://github.com/amazarashi/squeeze-simpleByPass-chainer/blob/develop/result/0.01/accuracy.png)
+![accuracy_0.01](https://github.com/amazarashi/squeeze-simpleByPass-chainer/blob/develop/result/0.01/accuracy.png "")
 
 loss
-[](https://github.com/amazarashi/squeeze-simpleByPass-chainer/blob/develop/result/0.01/loss.png)
+![loss_0.01](https://github.com/amazarashi/squeeze-simpleByPass-chainer/blob/develop/result/0.01/loss.png "")
 
 - Optimizer momentumSGD (0.04[as mentioned in paper] ~ scheduling lineary )
 
 accuracy
-[](https://github.com/amazarashi/squeeze-simpleByPass-chainer/blob/develop/result/0.02/accuracy.png)
+![accuracy_0.02](https://github.com/amazarashi/squeeze-simpleByPass-chainer/blob/develop/result/0.02/accuracy.png "")
 
 loss
-[](https://github.com/amazarashi/squeeze-simpleByPass-chainer/blob/develop/result/0.02/loss.png)
+![loss_0.02](https://github.com/amazarashi/squeeze-simpleByPass-chainer/blob/develop/result/0.02/loss.png "")
